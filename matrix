@@ -1,0 +1,15 @@
+
+import random
+def make_matrix(num_rows, num_cols):
+    
+    matrix = []
+    for i in range (num_rows):
+        rows = []
+        for j in range (num_cols):
+            num = random.randint(0,1)
+            rows.append(num)
+        matrix.append(rows)
+    for row in matrix:
+        print(row)
+        
+    return matrix
